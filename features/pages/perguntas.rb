@@ -8,3 +8,4 @@ class Perguntas < SitePrism::Page
   def validar_resposta(resposta_esperada)
     find(:xpath, "//h4[contains(text(), '#{@pergunta}')]//ancestor::li//p").to_eql? resposta_esperada
   end
+end
