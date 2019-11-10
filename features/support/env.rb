@@ -11,7 +11,7 @@ Capybara.register_driver :site_prism do |app|
     config.default_max_wait_time = 10
     config.app_host = 'https://casasbahia.com.br/'
   end
-  
+
   def chrome_options
     options = {
       'goog:chromeOptions' => {
