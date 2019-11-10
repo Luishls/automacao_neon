@@ -12,6 +12,8 @@ class Home < SitePrism::Page
   end
 
   def click_status_servicos_neon
+    page.execute_script("window.scrollBy(0, 1200)", '')
+    sleep 1
     status_servicos.click
   end
 end
