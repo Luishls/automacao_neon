@@ -1,5 +1,4 @@
 #language: pt
-#encoding: utf-8
 
 @films
 Funcionalidade: Validar API Films
