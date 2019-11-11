@@ -8,6 +8,5 @@ Funcionalidade: Validar API Films
   Para validar os retornos do endpoint
 
   Cenário: Validar os títulos exibidos pela API films
-    Dado que o endpoint Films esteja disponível
-    Quando realizar uma requisição para o endpoint Films
+    Dado que faça uma requisição para o endpoint Films
     Então os títulos devem ser retornados corretamente
