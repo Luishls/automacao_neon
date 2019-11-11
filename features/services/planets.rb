@@ -6,15 +6,14 @@ class Planets
 
   def get_planets
     response = self.class.get('/api/planets/')
-    generate_evidence(response)
     response
   end
 
-  def get_planets(count)
+  def get_planets_invalid(count)
     rand = Random.new
-    count = rand.Rand(1..10) + count
+    count = rand(1..10) + count
     response = self.class.get("/api/planets/#{count}")
-    generate_evidence(response)
+    puts response
     response
   end
 end

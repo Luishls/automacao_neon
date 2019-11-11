@@ -3,6 +3,6 @@ Dado("que faça uma requisição para o endpoint Films") do
 end
 
 Então("os títulos devem ser retornados corretamente") do
-  puts @response
   expect(@response.code).to eq 200
+  expect(@response['count']).not_to be_nil
 end

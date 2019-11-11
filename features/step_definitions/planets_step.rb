@@ -7,7 +7,7 @@ Dado("armazenar o valor do campo {string}") do |count|
 end
 
 Quando("realizar uma nova requisição para o endpoint enviando um valor maior que o campo count") do
-  @response = planets.get_planets(@count) 
+  @response = planets.get_planets_invalid(@count) 
 end
 
 Então("a API deve retornar a mensagem {string} com status code {int}") do |mensagem, status_code|

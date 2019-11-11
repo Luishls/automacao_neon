@@ -5,8 +5,6 @@ class Films
   base_uri 'https://swapi.co/'
 
   def get_films
-    response = self.class.get('api/films/')
-    generate_evidence(response)
-    response
+    response = self.class.get('/api/films/')
   end
 end
