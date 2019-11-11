@@ -6,3 +6,7 @@ require 'cucumber'
 def films
   Films.new
 end
+
+def planets
+  Planets.new
+end
