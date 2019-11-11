@@ -10,5 +10,5 @@ Quando("expandir a pergunta {string}") do |pergunta|
 end
   
 Então("deve exibir a resposta {string}") do |resposta|
-  @perguntas_page.validar_resposta(resposta)
+  expect(@perguntas_page.resposta_tela).to eq resposta
 end
